@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Edition">
+
+    <TextView
+        android:id="@+id/edit"
+        style="@style/st_title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit" />
+
+    <EditText
+        android:id="@+id/Ed_nom_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="nom"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Ed_prenom_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="prenom"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Ed_phone_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="numero"
+        android:inputType="phone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnqte_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quitter" />
+
+        <Button
+            android:id="@+id/btnVal_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valider" />
+    </LinearLayout>
+
+
+</LinearLayout>

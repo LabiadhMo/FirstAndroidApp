@@ -8,7 +8,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class Home extends AppCompatActivity {
+import java.util.ArrayList;
+
+public class Home extends AppCompatActivity implements View.OnClickListener {
+    static ArrayList<Contact> contacts=new ArrayList<Contact>();
 
     private TextView tvuser_home;
     private Button btnadd_home,btndisp_home;
@@ -29,5 +32,19 @@ public class Home extends AppCompatActivity {
 
         tvuser_home.setText("Home of M. "+username);
 
+        btnadd_home.setOnClickListener(this);
+        btndisp_home.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v==btnadd_home){
+            Intent i = new Intent(Home.this,Ajout.class);
+            startActivity(i);
+        }
+        if (v==btndisp_home){
+            Intent i = new Intent(Home.this,Affichage.class);
+            startActivity(i);
+        }
     }
 }
