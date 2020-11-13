@@ -18,11 +18,11 @@ public class Edition extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edition);
-        ednom=findViewById(R.id.Ed_nom_Ajout);
-        edprenom=findViewById(R.id.Ed_prenom_Ajout);
-        ednumero=findViewById(R.id.Ed_phone_Ajout);
-        btnval=findViewById(R.id.btnVal_ajout);
-        btnqte=findViewById(R.id.btnqte_ajout);
+        ednom=findViewById(R.id.Ed_nom_edit);
+        edprenom=findViewById(R.id.Ed_prenom_edit);
+        ednumero=findViewById(R.id.Ed_phone_edit);
+        btnval=findViewById(R.id.btnVal_edit);
+        btnqte=findViewById(R.id.btnqte_edit);
         Intent x = this.getIntent();
         Bundle b = x.getExtras();
         position= b.getInt("ID");
